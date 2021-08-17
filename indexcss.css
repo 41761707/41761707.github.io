@@ -119,6 +119,11 @@ a
 { 
 	color: inherit; 
 }
+.col-sm-4
+{
+	width: 29%;
+	margin: 0 2%;
+}
 #contact
 {
 	color:white;
@@ -132,4 +137,11 @@ a
 .contact-link
 {
 	font-size:2vw;
+}
+@media(max-width:768px)
+{
+	.col-sm-4
+	{
+		width: 95%;
+	}
 }
