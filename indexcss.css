@@ -1,7 +1,8 @@
 body
 {
-	background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
- 	background-blend-mode: multiply;
+	/*background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
+ 	background-blend-mode: multiply;*/
+ 	background-color: #637685;
  	box-sizing: border-box;
 	width:100%;
 	color:white;
@@ -180,8 +181,9 @@ input[type="checkbox"]
 }
 .newdiv > i
 {
-	box-shadow: -1px -1px 4px rgba(255, 255, 255, 0.05),
-    4px 4px 6px rgba(0, 0, 0, 0.2),
+	/*background-color: #888888;*/
+	box-shadow: -1px -1px 25px rgba(255, 255, 255, 0.05),
+    8px 8px 6px rgba(0, 0, 0, 0.2),
     inset -1px -1px 4px rgba(255, 255, 255, 0.05),
     inset 1px 1px 1px rgba(0, 0, 0, 0.1);
 }

@@ -54,7 +54,7 @@
 }
  
 .icon-king:before { content: '\e800'; font-size:5em;} /* '' */
-.icon-book:before { content: '\e801'; font-size:5em; } /* '' */
+.icon-book:before { content: '\e801'; font-size:5em;} /* '' */
 .icon-mail:before { content: '\e802'; font-size:8em;} /* '' */
 .icon-laptop:before { content: '\f109'; font-size:5em;} /* '' */
 .icon-gamepad:before { content: '\f11b'; font-size:5em; } /* '' */
