@@ -126,6 +126,10 @@ a
 	width: 29%;
 	margin: 0 2%;
 }
+.text-left
+{
+	text-align: left;
+}
 .col-sm-6
 {
 	width: 45%;
