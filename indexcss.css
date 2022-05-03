@@ -2,10 +2,10 @@ body
 {
 	/*background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
  	background-blend-mode: multiply;*/
- 	background-color: #637685;
+ 	background-color: #EDE6E6;
  	box-sizing: border-box;
 	width:100%;
-	color:white;
+	color:black;
 	margin: 0;
 	padding: 0;
 }
@@ -156,9 +156,9 @@ a
 }
 .btn-lg
 {
+	background-color: black;
 	font-size: 5vw;
 	background: none;
-	color: inherit;
 	border: none;
 	padding: 0;
 	font: inherit;
