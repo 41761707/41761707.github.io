@@ -8,6 +8,7 @@ body
 	color:black;
 	margin: 0;
 	padding: 0;
+	overflow-x:hidden;
 }
 hr
 {
@@ -165,7 +166,7 @@ a
 	cursor: pointer;
 	outline: inherit;
 }
-.btn-lg:hover,.newdiv:hover
+.btn-lg:hover,.newdiv:hover,.language:hover
 {
 	transition: all .2s ease;
 	transform:scale(1.3);
@@ -198,6 +199,10 @@ input[type="checkbox"]:checked ~ i
   color: yellow;
   text-shadow: 0 0 15px yellow, 0 0 25px yellow;
   animation: glow 1.5s linear infinite;
+}
+.invisible
+{
+	display:none;
 }
 @media(max-width:768px)
 {

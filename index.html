@@ -12,40 +12,40 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
     <title>Portfolio</title>
-    <script>
-    function clipboardFacebook() 
-    {
-        const textToCopy = "https://www.facebook.com/01h15/"
-    navigator.clipboard.writeText(textToCopy)
-        .then(() => { alert(`Skopiowano adres do schowka`) })
-        .catch((error) => { alert(`Copy failed! ${error}`) })
-        }
-        function clipboardEmail() 
-    {
-        const textToCopy = "wojtczakov@gmail.com"
-    navigator.clipboard.writeText(textToCopy)
-        .then(() => { alert(`Skopiowano adres do schowka`) })
-        .catch((error) => { alert(`Copy failed! ${error}`) })
-        }
-        function clipboardLinkedIn() 
-    {
-        const textToCopy = "https://www.linkedin.com/in/rados%C5%82aw-wojtczak-82313a1b5/"
-    navigator.clipboard.writeText(textToCopy)
-        .then(() => { alert(`Skopiowano adres do schowka`) })
-        .catch((error) => { alert(`Copy failed! ${error}`) })
-        }
-
-  </script>
   </head>
   <body data-aos-easing="ease-in-out" data-aos-duration="1000" data-aos-delay="0">
     <main class="container-fluid">
+        
+      </article>
       <header class="display-1 text-center">
         <article class="row">
+          <section class="col-auto">
+            <div class="row mb-2">
+              <button class="btn language btn-light">Light Mode</button>
+            </div>
+            <div class="row mb-2">
+              <button class="btn language btn-dark">Dark Mode</button>
+            </div>
+            <div class="row mb-2">
+              <button class="btn language btn-light">Polski <img src="source/Poland.png" alt="Flaga Polski"/></button>
+            </div>
+          </section>
           <section class="col">
             <h1 class="display-1"><b>Strona Główna</b> </h1>
-            <hr>
+          </section>
+          <section class="col-auto">
+            <div class="row mb-2">
+              <button class="btn language btn-light">English <img src="source/USA.png" alt="Flaga Stanów Zjednoczonych"/></button>
+            </div>
+            <div class="row mb-2">
+              <button class="btn language btn-light">한국어 <img src="source/South-Korea.png" alt="Flaga Korei Południowej"/></button>
+            </div>
+            <div class="row mb-2">
+              <button class="btn language btn-light""> Français <img src="source/France.png" alt="Flaga Francji"/> </button>
+            </div>
           </section>
         </article>
+        <hr>
         <article class="info row">
             <h2 class="display-2 mb-5 text-center"> <b>O mnie</b> </h2>
               <div class="col text-center">
@@ -56,7 +56,7 @@
               <div class="col text-center">
               <h4><i class="bi bi-chevron-right"><b>Status:</b> Student</i></h4>
               <h4><i class="bi bi-chevron-right"><b>Uczelnia:</b> Politechnika Wrocławska</i></h4>
-              <h4><i class="bi bi-chevron-right"><b>Miejscowość:</b> Żmigrod</i></h4>
+              <h4><i class="bi bi-chevron-right"><b>Miejscowość:</b> Żmigrod/Wrocław</i></h4>
               </div>
         </article>
         <hr>
@@ -96,12 +96,12 @@
         <section class="row">
           <div class="borders col-sm-2"></div>
           <div class="borders col-sm-4 text-center text-white bg-dark mb-5 p-3">
-            <h1> Szachy </h1>
+            <h2> Szachy </h2>
             <h3> <i class="icon-king"></i> </h3>
             <h4 class="p-2 description"> Początkujący szachista, ulubione otwarcia: Gambit Hetmański i Obrona Francuska</h4>
           </div>
           <div class="borders col-sm-4 text-center text-white bg-dark mb-5 p-3">
-            <h1> Literatura </h1>
+            <h2> Literatura </h2>
             <h3> <i class="icon-book"></i> </h3>
             <h4 class="p-2 description"> Pasjonat literatury filozoficznej jak i psychologicznej</h4>
           </div>
@@ -110,12 +110,12 @@
         <section class="row">
           <div class="borders col-sm-2"></div>
           <div class="borders col-sm-4 text-center text-white bg-dark mb-5 p-3">
-            <h1> Sport </h1>
+            <h2> Sport </h2>
             <h3> <i class="icon-soccer-ball"></i> </h3>
             <h4 class="p-2 description"> Fan sportów wszelakich z naciskiem na piłkę nożną oraz hokej </h4>
           </div>
           <div class="borders col-sm-4 text-center text-white bg-dark mb-5 p-3">
-            <h1> Gry</h1>
+            <h2> Gry</h2>
             <h3> <i class="icon-gamepad"></i> </h3>
             <h4 class="p-2 description">Wieloletni gracz takich tytułów jak League of Legends czy StarCraft2 </h4>
           </div>
@@ -124,12 +124,12 @@
         <section class="row">
           <div class="borders col-sm-2"></div>
           <div class="borders col-sm-4 text-center text-white bg-dark mb-5 p-3">
-            <h1 class="title"> Matematyka </h1>
+            <h2 class="title"> Matematyka </h2>
             <h3 class="icon"> <i class="icon-book"></i> </h3>
             <h4 class="description p-2">Żadna nauka nie wzmacnia tak wiary w potęgę umysłu ludzkiego, jak matematyka</h4>
           </div>
           <div class="borders col-sm-4 text-center text-white bg-dark mb-5 p-3">
-            <h1 class="title"> Informatyka</h1>
+            <h2 class="title"> Informatyka</h2>
             <h3 class="icon"> <i class="icon-laptop"></i> </h3>
             <h4 class="description p-2">Od tworzenia stron internetowych, po algorytmikę czy pentesting, na sztucznej inteligencji kończąc</h4>
           </div>
@@ -277,14 +277,52 @@
         </section>
       </article>
       <hr>
-      <footer id="contact">
-        <h2 class="display-3 text-black text-center mb-4 "><b>Dane do kontaktu</b></h2>
+      <footer id="contact" class="text-black">
+        <h2 class="display-3 text-center mb-4 "><b>Dane do kontaktu</b></h2>
         <button class="btn-lg" onclick="clipboardFacebook()"><i class="icon-facebook-squared"></i></button>
         <button class="btn-lg" onclick="clipboardEmail()"><i class="icon-mail"></i></button>
         <button class="btn-lg" onclick="clipboardLinkedIn()"><i class="icon-linkedin-squared"></i></button>
+        <h4 class="display-4 text-center m-4">Kopiowanie nie działa?</h4> 
+        <button class="btn btn-warning m-2" onclick="showLinks()">Wyświetl linki</button>
+        <div id="links" class="invisible bg-dark text-white">
+          <p>Facebook:  <a target="_blank" href="https://www.facebook.com/01h15/">https://www.facebook.com/01h15/</a></p>
+          <p>E-mail: wojtczakov@gmail.com</p>
+          <p>Linkedin: <a target="_blank" href="https://www.linkedin.com/in/rados%C5%82aw-wojtczak-82313a1b5/">https://www.linkedin.com/in/rados%C5%82aw-wojtczak-82313a1b5/</a></p>
+        </div>
       </footer>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script>
+      function clipboardFacebook() 
+      {
+          const textToCopy = "https://www.facebook.com/01h15/"
+      navigator.clipboard.writeText(textToCopy)
+          .then(() => { alert(`Skopiowano adres do schowka`) })
+          .catch((error) => { alert(`Copy failed! ${error}`) })
+          }
+          function clipboardEmail() 
+      {
+          const textToCopy = "wojtczakov@gmail.com"
+      navigator.clipboard.writeText(textToCopy)
+          .then(() => { alert(`Skopiowano adres do schowka`) })
+          .catch((error) => { alert(`Copy failed! ${error}`) })
+          }
+          function clipboardLinkedIn() 
+      {
+          const textToCopy = "https://www.linkedin.com/in/rados%C5%82aw-wojtczak-82313a1b5/"
+      navigator.clipboard.writeText(textToCopy)
+          .then(() => { alert(`Skopiowano adres do schowka`) })
+          .catch((error) => { alert(`Copy failed! ${error}`) })
+          }
+  
+    </script>
+    <script>
+      function showLinks()
+      {
+        let swap=document.getElementById("links");
+        swap.classList.toggle('invisible');
+      }
+    </script>
   </body>
 </html>
 <script>
