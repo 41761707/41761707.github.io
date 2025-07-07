@@ -1,7 +1,5 @@
 body
 {
-	/*background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
- 	background-blend-mode: multiply;*/
  	background-color: #EDE6E6;
  	box-sizing: border-box;
 	width:100%;
@@ -18,7 +16,9 @@ hr
 {
 	position: relative;
 	width: 100%;
-	margin: 0;
+	margin: 0 auto;
+	max-width: 900px;
+	min-height: 400px;
 }
 .info
 {
@@ -32,25 +32,27 @@ hr
 	position: absolute;
 	width: 6px;
 	background-color: #202020;
-	top: 0;
+	top: 100px;
 	bottom: 0;
-	left: 28px;
+	left: 50%;
 	margin-left: -3px;
 }
 .my-container 
 {
 	color: white;
-	padding: 10px 25px 10px 70px;
+	padding: 10px 40px;
 	position: relative;
 	background-color: inherit;
-	width: 80%;
+	width: 50%;
 }
-.my-container::before
+.my-container.left 
 {
-	left: 60px;
-	border: medium solid #202020;
-	border-width: 10px 10px 10px 0;
-	border-color: transparent #202020 transparent transparent;
+	left: 0;
+}
+
+.my-container.right 
+{
+	left: 50%;
 }
 
 .my-container::after 
@@ -59,28 +61,47 @@ hr
 	position: absolute;
 	width: 25px;
 	height: 25px;
-	right: -17px;
 	background-color: #212529;
 	border: 4px solid #FF9F55;
 	top: 15px;
 	border-radius: 50%;
 	z-index: 1;
-
+	left: 103.5%;
+    transform: translateX(-110%);
 }
 
+/*.my-container.left::after 
+{
+	left: -17px;
+}
 
-.left::before 
+.my-container.right::after 
+{
+	right: -17px;
+}*/
+
+.my-container.left::before 
 {
 	content: " ";
 	height: 0;
 	position: absolute;
 	top: 22px;
-	width: 0;
-	z-index: 1;
 	right: 30px;
 	border: medium solid #202020;
 	border-width: 10px 0 10px 10px;
 	border-color: transparent transparent transparent #202020;
+}
+
+.my-container.right::before 
+{
+	content: " ";
+	height: 0;
+	position: absolute;
+	top: 22px;
+	left: 30px;
+	border: medium solid #202020;
+	border-width: 10px 10px 10px 0;
+	border-color: transparent #202020 transparent transparent;
 }
 
 
@@ -89,9 +110,19 @@ hr
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size:1.5em;
   	padding: 2%;
-  	background-color: #202020;
   	position: relative;
  	border-radius: 6px;
+}
+
+.school
+{
+	background-color: #202020;
+}
+
+
+.work
+{
+	background-color: #ee5050;
 }
 
 
@@ -214,6 +245,32 @@ input[type="checkbox"]:checked ~ i
 	{
 		width: 95%;
 		margin: 2%;
+	}
+	.timeline::after 
+	{
+		left: 31px;
+	}
+	.my-container 
+	{
+		width: 100%;
+		padding-left: 70px;
+		padding-right: 25px;
+	}
+	.my-container.right, .my-container.left 
+	{
+		left: 0;
+	}
+	.my-container.right::before, .my-container.left::before 
+	{
+		left: 60px;
+		right: auto;
+		border-width: 10px 10px 10px 0;
+		border-color: transparent #202020 transparent transparent;
+	}
+	.my-container.right::after, .my-container.left::after 
+	{
+		left: 15px;
+		right: auto;
 	}
 }
 
